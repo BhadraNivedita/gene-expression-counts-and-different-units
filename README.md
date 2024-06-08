@@ -13,15 +13,11 @@ Here's how CPM is calculated:
 The formula for calculating CPM for a specific gene  $\( g \)$ in a sample $\( i \)$ is:
 
 
-\begin{equation}
-
-\[ CPM_{gi} = \frac{{Counts_{gi}}}{{Total\_Counts_i}} \times 10^6 \]
- 
-\end{equation}
+                              $\[ CPM_{gi} = \frac{{Counts_{gi}}}{{Total\_Counts_i}} \times 10^6 \]$
 
 Where:
-- \( CPM_{gi} \) is the counts per million for gene \( g \) in sample \( i \).
-- \( Counts_{gi} \) is the count of gene \( g \) in sample \( i \).
-- \( Total\_Counts_i \) is the total count of all genes in sample \( i \).
+- $\( CPM_{gi} \)$ is the counts per million for gene $\( g \)$ in sample $\( i \)$.
+- $\( Counts_{gi} \)$ is the count of gene \( g \) in sample $\( i \)$.
+- $\( Total\_Counts_i \)$ is the total count of all genes in sample $\( i \)$.
 
 Counts per million normalization allows for the comparison of gene expression levels between samples, accounting for differences in sequencing depth or library size. This normalization method is particularly useful in RNA-seq experiments, where the number of reads mapped to each gene can vary significantly between samples due to technical factors or biological variability.
