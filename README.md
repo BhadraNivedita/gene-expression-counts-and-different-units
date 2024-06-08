@@ -13,7 +13,7 @@ Here's how CPM is calculated:
 The formula for calculating CPM for a specific gene \( g \) in a sample \( i \) is:
 
 
-![alt text](CPM_eq.png)
+![alt text](CPM_ep.png)
 
 
 Where:
