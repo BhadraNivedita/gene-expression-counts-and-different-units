@@ -10,10 +10,7 @@ Here's how CPM is calculated:
 
 3. **Scaling**: Multiply the result by a million to scale the counts to a common reference point, allowing for comparison between samples.
 
-The formula for calculating CPM for a specific gene  $\( g \)$ in a sample $\( i \)$ is:
-
-
-                              $\[ CPM_{gi} = \frac{{Counts_{gi}}}{{Total\_Counts_i}} \times 10^6 \]$
+The formula for calculating CPM for a specific gene  $\( g \)$ in a sample $\( i \)$ is:  $\[ CPM_{gi} = \frac{{Counts_{gi}}}{{Total\_Counts_i}} \times 10^6 \]$
                                
 
 Where:
