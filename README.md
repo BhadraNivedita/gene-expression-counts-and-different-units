@@ -13,9 +13,9 @@ Here's how CPM is calculated:
 The formula for calculating CPM for a specific gene  $\( g \)$ in a sample $\( i \)$ is:
 
 
-                               ``` 
+                               
                                $$ \[ CPM_{gi} = \frac{{Counts_{gi}}}{{Total\_Counts_i}} \times 10^6 \] $$
-                               ```
+                               
 
 Where:
 - $\( CPM_{gi} \)$ is the counts per million for gene $\( g \)$ in sample $\( i \)$.
