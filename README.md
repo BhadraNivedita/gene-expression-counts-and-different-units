@@ -102,8 +102,7 @@ Assume we have data for three genes with the following properties:
 | C    | 1500  | 3000        |
 
 #### Step 1: Calculate RPK for each gene
-
- $ \[ \text{RPK}_A = \frac{500}{1000 / 1000} = 500 \]$
+$ \[ \text{RPK}_A = \frac{500}{1000 / 1000} = 500 \]$
 $\[ \text{RPK}_B = \frac{1000}{2000 / 1000} = 500 \]$
 $\[ \text{RPK}_C = \frac{1500}{3000 / 1000} = 500 \]$
 
