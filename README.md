@@ -124,3 +124,13 @@ $\[ \text{TPM}_C = \frac{500}{1500} \times 10^6 = 333,333.33 \]$
 
 TPM (Transcripts Per Million) is a robust normalization method in RNA-seq data analysis, designed to account for both transcript length and sequencing depth. It normalizes for gene length first and then for sequencing depth, making it more effective for comparing gene expression levels across different samples. This method is widely adopted in transcriptomics to ensure consistent and comparable expression measurements.
 
+
+*** TMM (Trimmed Mean of M-values) ***
+
+TMM is a between-sample normalization method in contrast to within-sample normalization methods (RPM, RPKM/FPKM, or TPM)
+
+TMM normalization method assumes that most of the genes are not differentially expressed TMM normalize the total RNA output among the samples and does not consider gene length or library size for normalization. TMM considers sample RNA population and effective in normalization of samples with diverse RNA repertoires (e.g. samples from different tissues). TMM will be a good choice to remove the batch effects while comparing the samples from different tissues or genotypes or in cases where RNA population would be significantly different among the samples. To calculate TMM, get the library size normalized read count for each gene in each sample calculate the log2 fold change between the two samples (M value) get the absolute expression count (A value)
+
+Now, double trim the upper and lower percentages of the data (trim M values by 30% and A values by 5%) Get weighted mean of M after trimming and calculate normalization factor.
+
+TMM is implemented in edgeR and performs better for between-samples comparisons edgeR does not consider gene length for normalization as it assumes that the gene length would be constant between the samples.
