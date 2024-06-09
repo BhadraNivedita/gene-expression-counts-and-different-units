@@ -106,7 +106,7 @@ $ \[ \text{RPK}_A = \frac{500}{1000 / 1000} = 500 \]$
 $\[ \text{RPK}_B = \frac{1000}{2000 / 1000} = 500 \]$
 $\[ \text{RPK}_C = \frac{1500}{3000 / 1000} = 500 \]$
 
-#### Step 2: Sum of RPK values $ \[ \sum \text{RPK} = 500 + 500 + 500 = 1500 \]$ 
+#### Step 2: Sum of RPK values $\[ \sum \text{RPK} = 500 + 500 + 500 = 1500 \]$ 
 
 #### Step 3: Normalize to get TPM
 
