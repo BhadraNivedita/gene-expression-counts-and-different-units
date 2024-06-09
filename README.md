@@ -81,7 +81,7 @@ TPM is similar to RPKM (Reads Per Kilobase of transcript per Million mapped read
 
 ### Calculation of TPM
 
-The formula to calculate TPM for a given gene is: $ \[ \text{TPM} = \frac{\text{Number of reads mapping to the gene} / \text{Length of the gene in kilobases}}{\sum \left(\text{Number of reads mapping to each gene} / \text{Length of each gene in kilobases}\right)} \times 10^6 \]$
+The formula to calculate TPM for a given gene is: $\[ \text{TPM} = \frac{\text{Number of reads mapping to the gene} / \text{Length of the gene in kilobases}}{\sum \left(\text{Number of reads mapping to each gene} / \text{Length of each gene in kilobases}\right)} \times 10^6 \]$
 
 Here's a step-by-step breakdown:
 
