@@ -1,6 +1,9 @@
 # Gene expression units and calculations
 
 ## CPM 
+
+**RPM or CPM (Reads per million mapped reads or Counts per million mapped reads)**
+
 Counts per million (CPM) is a normalization method commonly used in genomics and transcriptomics to account for differences in sequencing depth or library size when comparing gene expression levels across samples.
 
 Here's how CPM is calculated:
