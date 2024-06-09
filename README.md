@@ -103,17 +103,17 @@ Assume we have data for three genes with the following properties:
 
 #### Step 1: Calculate RPK for each gene
 
-\[ \text{RPK}_A = \frac{500}{1000 / 1000} = 500 \]
-\[ \text{RPK}_B = \frac{1000}{2000 / 1000} = 500 \]
-\[ \text{RPK}_C = \frac{1500}{3000 / 1000} = 500 \]
+ $ \[ \text{RPK}_A = \frac{500}{1000 / 1000} = 500 \]$
+$\[ \text{RPK}_B = \frac{1000}{2000 / 1000} = 500 \]$
+$\[ \text{RPK}_C = \frac{1500}{3000 / 1000} = 500 \]$
 
 #### Step 2: Sum of RPK values $ \[ \sum \text{RPK} = 500 + 500 + 500 = 1500 \]$ 
 
 #### Step 3: Normalize to get TPM
 
-\[ \text{TPM}_A = \frac{500}{1500} \times 10^6 = 333,333.33 \]
-\[ \text{TPM}_B = \frac{500}{1500} \times 10^6 = 333,333.33 \]
-\[ \text{TPM}_C = \frac{500}{1500} \times 10^6 = 333,333.33 \]
+$\[ \text{TPM}_A = \frac{500}{1500} \times 10^6 = 333,333.33 \]$
+$\[ \text{TPM}_B = \frac{500}{1500} \times 10^6 = 333,333.33 \]$
+$\[ \text{TPM}_C = \frac{500}{1500} \times 10^6 = 333,333.33 \]$
 
 ### Key Points
 
