@@ -57,9 +57,9 @@ The calculation would be as follows:
    \[ \text{RPM} = \frac{\text{Total number of reads}}{1,000,000} \]
    \[ \text{RPM} = \frac{20,000,000}{1,000,000} = 20 \]
 
-2. **Normalize for the length of the gene**:
-   \[ \text{RPKM} = $ \frac{\text{Number of reads mapping to the gene}}{\text{RPM} \times \left(\frac{\text{Length of the gene}}{1,000}\right)} \]$
-   \[ \text{RPKM} =  $\frac{1000}{20 \times 2} = \frac{1000}{40} = 25 \]$
+2. **Normalize for the length of the gene**: $\[ \text{RPKM} = \frac{\text{Number of reads mapping to the gene}}{\text{RPM} \times \left(\frac{\text{Length of the gene}}{1,000}\right)} \]$
+   
+    $\[ \text{RPKM} =  \frac{1000}{20 \times 2} = \frac{1000}{40} = 25 \]$
 
 Thus, the RPKM for this gene is 25.
 
