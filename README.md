@@ -26,7 +26,8 @@ $\[ \text{Normalized count} = \frac{\text{Raw count}}{\text{Size factor}} \]$
 These methods ensure that comparisons of gene expression are meaningful by adjusting for various biases and differences in sequencing data.
 
 
- ** Why do we need different definitions? 
+ ## Why do we need different definitions? 
+ 
 In bioinformatics, especially in RNA sequencing (RNA-seq) data analysis, we need different normalization units like CPM, RPKM, TPM, and DESeq2 normalization to account for various biases and ensure accurate and meaningful comparisons of gene expression levels. Here’s why these different normalization methods are necessary:
 
 ### 1. Sequencing Depth Variation
