@@ -7,6 +7,28 @@ Brief definitions of CPM, RPKM, TPM, and DESeq2 normalization:
 **Mathematical Definition**: 
 $\[ \text{CPM} = \frac{\text{Number of reads mapping to a gene}}{\text{Total number of reads in the sample}} \times 10^6 \]$
 
+```
+from bioinfokit.analys import norm, get_data
+# load sugarcane RNA-seq expression dataset (Published in Bedre et al., 2019)
+df = get_data('sc_exp').data
+df.head(2)
+
+# as this data has gene length column, we will drop length column
+df = df.drop(['length'], axis=1)
+# make gene column as index column
+df = df.set_index('gene')
+df.head(2)
+
+# now, normalize raw counts using CPM method 
+nm = norm()
+nm.cpm(df=df)
+# get CPM normalized dataframe
+cpm_df = nm.cpm_norm
+cpm_df.head(2)
+
+```
+
+
 ### RPKM (Reads Per Kilobase of transcript per Million mapped reads)
 **Definition**: RPKM normalizes read counts by both the length of the gene and the total number of reads in the sample, allowing comparison of gene expression within a sample.
 **Mathematical Definition**: 
