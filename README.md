@@ -1,5 +1,6 @@
 # Gene expression units and calculations
 
+## CPM 
 Counts per million (CPM) is a normalization method commonly used in genomics and transcriptomics to account for differences in sequencing depth or library size when comparing gene expression levels across samples.
 
 Here's how CPM is calculated:
