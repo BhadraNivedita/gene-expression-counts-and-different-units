@@ -13,7 +13,7 @@ Here's how CPM is calculated:
 
 3. **Scaling**: Multiply the result by a million to scale the counts to a common reference point, allowing for comparison between samples.
 
-The formula for calculating CPM for a specific gene  $\( g \)$ in a sample $\( i \)$ is:  $\[ CPM_{gi} = \frac{{Counts_{gi}}}{{Total\_Counts_i}} \times 10^6 \]$
+The formula for calculating CPM for a specific gene $\( g \)$ in a sample $\( i \)$ is:  $\[ CPM_{gi} = \frac{{Counts_{gi}}}{{Total\_Counts_i}} \times 10^6 \]$
                                
 
 Where:
@@ -85,14 +85,11 @@ The formula to calculate TPM for a given gene is: $ \[ \text{TPM} = \frac{\text{
 
 Here's a step-by-step breakdown:
 
-1. **Calculate Reads Per Kilobase (RPK)**:
-   \[ \text{RPK} = \frac{\text{Number of reads mapping to the gene}}{\text{Length of the gene in kilobases}} \]
+1. **Calculate Reads Per Kilobase (RPK)**: $\[ \text{RPK} = \frac{\text{Number of reads mapping to the gene}}{\text{Length of the gene in kilobases}} \]$
 
-2. **Sum of RPK values for all genes**:
-   \[ \sum \text{RPK} = \sum \left(\frac{\text{Number of reads mapping to each gene}}{\text{Length of each gene in kilobases}}\right) \]
+2. **Sum of RPK values for all genes**: $\[ \sum \text{RPK} = \sum \left(\frac{\text{Number of reads mapping to each gene}}{\text{Length of each gene in kilobases}}\right) \]$
 
-3. **Normalize each RPK value to get TPM**:
-   \[ \text{TPM} = \frac{\text{RPK}}{\sum \text{RPK}} \times 10^6 \]
+3. **Normalize each RPK value to get TPM**: $\[ \text{TPM} = \frac{\text{RPK}}{\sum \text{RPK}} \times 10^6 \]$
 
 ### Step-by-Step Example
 
@@ -110,9 +107,7 @@ Assume we have data for three genes with the following properties:
 \[ \text{RPK}_B = \frac{1000}{2000 / 1000} = 500 \]
 \[ \text{RPK}_C = \frac{1500}{3000 / 1000} = 500 \]
 
-#### Step 2: Sum of RPK values
-
-\[ \sum \text{RPK} = 500 + 500 + 500 = 1500 \]
+#### Step 2: Sum of RPK values $ \[ \sum \text{RPK} = 500 + 500 + 500 = 1500 \]$ 
 
 #### Step 3: Normalize to get TPM
 
