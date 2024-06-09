@@ -70,5 +70,63 @@ Thus, the RPKM for this gene is 25.
 - **Limitations**: Not suitable for comparing gene expression across different samples or conditions without further normalization, as it doesn't account for differences in library composition or sequencing biases.
 
 
+**TPM (Transcripts per million)**
 
+
+**TPM (Transcripts Per Million)** is a normalization method used in RNA sequencing (RNA-seq) data analysis to measure gene expression levels. It is designed to improve comparability between samples by normalizing for both transcript length and sequencing depth. Here’s an overview of what TPM is and how it is calculated:
+
+### Understanding TPM
+
+TPM is similar to RPKM (Reads Per Kilobase of transcript per Million mapped reads) but with a key difference in the order of normalization steps. TPM normalizes for gene length first and then for sequencing depth, which ensures that the sum of TPMs in each sample is the same, making it easier to compare gene expression levels between different samples.
+
+### Calculation of TPM
+
+The formula to calculate TPM for a given gene is: $ \[ \text{TPM} = \frac{\text{Number of reads mapping to the gene} / \text{Length of the gene in kilobases}}{\sum \left(\text{Number of reads mapping to each gene} / \text{Length of each gene in kilobases}\right)} \times 10^6 \]$
+
+Here's a step-by-step breakdown:
+
+1. **Calculate Reads Per Kilobase (RPK)**:
+   \[ \text{RPK} = \frac{\text{Number of reads mapping to the gene}}{\text{Length of the gene in kilobases}} \]
+
+2. **Sum of RPK values for all genes**:
+   \[ \sum \text{RPK} = \sum \left(\frac{\text{Number of reads mapping to each gene}}{\text{Length of each gene in kilobases}}\right) \]
+
+3. **Normalize each RPK value to get TPM**:
+   \[ \text{TPM} = \frac{\text{RPK}}{\sum \text{RPK}} \times 10^6 \]
+
+### Step-by-Step Example
+
+Assume we have data for three genes with the following properties:
+
+| Gene | Reads | Length (bp) |
+|------|-------|-------------|
+| A    | 500   | 1000        |
+| B    | 1000  | 2000        |
+| C    | 1500  | 3000        |
+
+#### Step 1: Calculate RPK for each gene
+
+\[ \text{RPK}_A = \frac{500}{1000 / 1000} = 500 \]
+\[ \text{RPK}_B = \frac{1000}{2000 / 1000} = 500 \]
+\[ \text{RPK}_C = \frac{1500}{3000 / 1000} = 500 \]
+
+#### Step 2: Sum of RPK values
+
+\[ \sum \text{RPK} = 500 + 500 + 500 = 1500 \]
+
+#### Step 3: Normalize to get TPM
+
+\[ \text{TPM}_A = \frac{500}{1500} \times 10^6 = 333,333.33 \]
+\[ \text{TPM}_B = \frac{500}{1500} \times 10^6 = 333,333.33 \]
+\[ \text{TPM}_C = \frac{500}{1500} \times 10^6 = 333,333.33 \]
+
+### Key Points
+
+- **Normalization**: TPM normalizes for gene length first, then for sequencing depth, ensuring that the total TPMs in each sample sum to 1 million.
+- **Application**: Useful for comparing gene expression levels between different samples.
+- **Advantage**: TPM is more suitable for between-sample comparisons than RPKM/FPKM because it makes the data more comparable by ensuring a consistent total across samples.
+
+### Summary
+
+TPM (Transcripts Per Million) is a robust normalization method in RNA-seq data analysis, designed to account for both transcript length and sequencing depth. It normalizes for gene length first and then for sequencing depth, making it more effective for comparing gene expression levels across different samples. This method is widely adopted in transcriptomics to ensure consistent and comparable expression measurements.
 
