@@ -36,9 +36,7 @@ RPKM (Reads Per Kilobase of transcript per Million mapped reads) is a normalizat
 
 ### Calculation of RPKM
 
-The formula to calculate RPKM for a given gene is:
-
-\[ \text{RPKM} = \frac{\text{Number of reads mapping to the gene}}{\left(\frac{\text{Total reads in the sample}}{1,000,000}\right) \times \left(\frac{\text{Length of the gene in base pairs}}{1,000}\right)} \]
+The formula to calculate RPKM for a given gene is: $\[ \text{RPKM} = \frac{\text{Number of reads mapping to the gene}}{\left(\frac{\text{Total reads in the sample}}{1,000,000}\right) \times \left(\frac{\text{Length of the gene in base pairs}}{1,000}\right)} \] $
 
 Here's a step-by-step breakdown:
 
