@@ -24,7 +24,7 @@ Where:
 Counts per million normalization allows for the comparison of gene expression levels between samples, accounting for differences in sequencing depth or library size. This normalization method is particularly useful in RNA-seq experiments, where the number of reads mapped to each gene can vary significantly between samples due to technical factors or biological variability.
 
 
-**RPKM (Reads per kilo base of transcript per million mapped reads)**
+**RPKM (Reads per kilobase of transcript per million mapped reads)**
 
 RPKM (Reads Per Kilobase of transcript per Million mapped reads) is a normalization method used in RNA sequencing (RNA-seq) data analysis to measure gene expression levels. It accounts for both the length of the transcripts and the sequencing depth. Here’s an overview of what RPKM is and how it is calculated:
 
@@ -57,7 +57,8 @@ The calculation would be as follows:
    \[ \text{RPM} = \frac{\text{Total number of reads}}{1,000,000} \]
    \[ \text{RPM} = \frac{20,000,000}{1,000,000} = 20 \]
 
-2. **Normalize for the length of the gene**: $\[ \text{RPKM} = \frac{\text{Number of reads mapping to the gene}}{\text{RPM} \times \left(\frac{\text{Length of the gene}}{1,000}\right)} \]$
+2. **Normalize for the length of the gene**: $\[ \text{RPKM} = \frac{\text{Number of reads mapping to the gene}} $
+   $ {\text{RPM} \times \left(\frac{\text{Length of the gene}}{1,000}\right)} \]$
    
     $\[ \text{RPKM} =  \frac{1000}{20 \times 2} = \frac{1000}{40} = 25 \]$
 
